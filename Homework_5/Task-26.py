@@ -7,8 +7,8 @@
 # A = 2; B = 3 -> 8
 
 def A_degree_B(a, b):
-    if b == 1:
-        return a
+    if b == 0:
+        return 1
     return A_degree_B(a, b-1) * a
 
 A = int(input(f'Введите первое число '))
